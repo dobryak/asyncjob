@@ -1,4 +1,5 @@
 from .fsm import Machine, MachineState, MachineStateHandler, StateTransitionTable
+from .helpers import RetryJobWrapper
 from .job import Job, Task
 from .scheduler import Scheduler
 
@@ -9,6 +10,7 @@ __all__ = [
     "Machine",
     "MachineState",
     "MachineStateHandler",
+    "RetryJobWrapper",
     "StateTransitionTable",
 ]
 

@@ -12,9 +12,6 @@ __all__ = ["RetryJobWrapper"]
 logger = logging.getLogger(__name__)
 
 
-JobFactory = Callable[[], Job]
-
-
 class RetryJobWrapper(Machine):
     """
     Job wrapper that executes the given job until it is succeed or the given
@@ -25,7 +22,7 @@ class RetryJobWrapper(Machine):
     def __init__(
         self,
         scheduler: Scheduler,
-        job_factory: JobFactory,
+        job_factory: Callable[[], Job],
         *,
         delay: float = 30,
         retry_count: int = 10,
