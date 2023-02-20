@@ -18,6 +18,10 @@ build-img: .docker-beacon
 dist: check
 	@$(CONTAINER_CMD) python setup.py bdist_wheel
 
+.PHONY: upload
+upload:
+	@$(CONTAINER_CMD) python -m twine upload dist/*
+
 .PHONY: check
 check: .docker-beacon
 	@$(CONTAINER_CMD) \
