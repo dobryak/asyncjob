@@ -14,7 +14,7 @@ __all__ = [
     "StateTransitionTable",
 ]
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __license__ = "GPL3"
 __author__ = __maintainer__ = "Anton Dobriakov"
 __author_email__ = "anton.dobryakov@gmail.com"
