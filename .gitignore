@@ -1,0 +1,8 @@
+.docker-beacon
+*.pyc
+config.mk
+asyncjob.egg-info/
+build/
+dist/
+env/
+__pycache__

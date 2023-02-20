@@ -1,0 +1,7 @@
+isort~=5.10.1
+flake8~=5.0.4
+mypy~=0.971
+black~=22.6.0
+twine~=4.0.1
+
+-r ./requirements.txt
